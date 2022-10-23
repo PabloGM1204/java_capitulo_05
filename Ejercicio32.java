@@ -4,12 +4,11 @@ public class Ejercicio32{
         Scanner sc = new Scanner(System.in);
         System.out.println("Este programa te coge los números pares de un número y los suma");
         System.out.print("Dime un número entero: ");
-        int n = sc.nextInt();
-        int p = 0;
+        long n = sc.nextInt();
         int c = 0;
         int t = 0;
         while(n>0){
-            c = n%10;
+            c = (int)n%10;
             if((c%2)==0){
                 System.out.print(c+" ");
                 t +=c;
