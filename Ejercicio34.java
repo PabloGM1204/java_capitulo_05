@@ -5,36 +5,43 @@ public class Ejercicio34{
         System.out.println("Este programa coge los números pares e impares y los separa formando nuevos números");
         System.out.print("Dime un número: ");
         long n1 = sc.nextLong();
-        long n1_ = n1;
-        long p = 0;
-        long tp = 0;
         long nv = 0;
-        int longn = 0;
         System.out.print("Dime otro número: ");
         long n2 = sc.nextLong();
-        long n2_ = n2;
-        long im = 0;
-        long tim = 0;
-        long nv2 = 0;
-        while(n1>0){
-            nv = (nv*10)+(n1%10);
-            longn++;
-            n1 /=10;
+        long n = n1;
+        int longn = 0;
+        if (n == 1){
+            longn = 1;
         }
+        while(n>0){
+            nv = (nv*10)+(n%10);
+            n /=10;
+            longn++;
+        }
+        n = n2;
+        long nv2 = 0;
+        while(n>0){
+            nv2 = (nv2*10)+(n%10);
+            n /=10;
+        }
+        long tim = 0;
+        long tp = 0;
+        long digito;
         for(int i = 0;i<longn;i++){
-            p = n1_%10;
-            if((p%2)==0){
-                tp += p;
-                tp *=10;
-                n1_ /=10;
+            digito = nv%10;
+            if((digito%2)==0){
+                tp = tp * 10+digito ;
+            }else{
+                tim = tim * 10 + digito;
             }
-            im = n2_%10;
-            if((im%2)==0){
-                tim += im;
-                tim *=10;
-                n2_ /=10;
+            digito = nv2%10;
+            if((digito%2)==0){
+                tp = digito + tp * 10;
+            }else{
+                tim = tim * 10 + digito;
             }
-            System.out.println("hola");
+            nv /=10;
+            nv2 /=10;
         }
         System.out.println("El número formado por los dígitos pares es: "+ tp);
         System.out.println("El número formado por los dígitos impares es: "+ tim);
