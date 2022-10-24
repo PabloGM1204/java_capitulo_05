@@ -7,12 +7,9 @@ public class Ejercicio36{
         long n = sc.nextInt();
         long nv = 0;
         long n_ = n;
-        int longi = 0;
-        boolean capicuo = true;
         while (n>0) {
             nv = (nv*10)+(n%10);
             n/=10;
-            longi++;
         }
         if(n_==nv){
             System.out.println("El "+n_+" es capicuo");
