@@ -5,10 +5,7 @@ public class Ejercicio48{
         System.out.println("Este programa te dice los números que aparecen y los que no");
         System.out.print("Dime un número: ");
         int n = sc.nextInt();
-        int nv = 0;
         int nc = 0;
-        int t = 0;
-        int t1 = 0;
         boolean igual;
         System.out.print("Dígitos que aparecen en el número: ");
         for(int i = 0;i<10;i++){
