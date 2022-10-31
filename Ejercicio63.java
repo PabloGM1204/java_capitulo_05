@@ -1,8 +1,8 @@
 import java.util.Scanner;
 public class Ejercicio63{
     public static void main(String[] args) {
-        System.out.println("Este programa pinta dos piramides rellenas con asteriscos");
         Scanner sc = new Scanner(System.in);
+        System.out.println("Este programa pinta dos piramides rellenas con asteriscos");
         System.out.print("Introduzca la altura de la primera pirámide: ");
         int altp1 = sc.nextInt();
         System.out.print("Introduzca la altura de la segunda pirámide: ");
