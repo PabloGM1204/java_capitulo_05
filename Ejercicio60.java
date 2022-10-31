@@ -6,17 +6,21 @@ public class Ejercicio60{
         System.out.print("Dime la altura: ");
         int alt = sc.nextInt();
         int esp = 3;
-        for(int i = 1; i<=alt-2; i++){
-            for(int j = 1; j<=esp; j++){
-                System.out.print("*");
+        if(alt<4){
+            System.out.println("Error debe ser la altura mayor o igual a 4");
+        }else{
+            for(int i = 1; i<=alt-2; i++){
+                for(int j = 1; j<=esp; j++){
+                    System.out.print("*");
+                }
+                System.out.print("     ");
+                for(int j = 1; j<=esp; j++){
+                    System.out.print("*");
+                }
+                System.out.println("");
             }
-            System.out.print("     ");
-            for(int j = 1; j<=esp; j++){
-                System.out.print("*");
-            }
-            System.out.println("");
+            System.out.println("******  ******");
+            System.out.print("******  ******");
         }
-        System.out.println("******  ******");
-        System.out.print("******  ******");
     }
 }
