@@ -50,7 +50,7 @@ public class Ejercicio63{
                 esp2--;
                 astp2 += 2;
             }
-        System.out.println();
+        System.out.println("");
         }
     }
 }
